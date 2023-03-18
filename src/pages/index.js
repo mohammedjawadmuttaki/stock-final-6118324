@@ -139,19 +139,19 @@ export default function Home() {
       <Header />
       <Flex align="center" justifyContent="center">
         <Box
-          width={800}
-          borderWidth={1}
-          borderRadius={8}
-          boxShadow="lg"
-          p={20}
-          mt="25"
+          width={2000}
+          borderWidth={20}
+          borderRadius={20}
+          boxShadow="large"
+          p={13}
+          mt="75"
         >
           <Flex justifyContent="flex-end">
             <Button
-              colorScheme="green"
+              colorScheme="blue"
               onClick={() => setIsFormOpen(!isFormOpen)}
             >
-              {isFormOpen ? "-" : "+"}
+              {isFormOpen ? "-" : "+Add"}
             </Button>
           </Flex>
 
@@ -192,11 +192,11 @@ export default function Home() {
           ) : null}
 
           <Table variant="simple" mt={6}>
-            <Thead bgColor="teal.500">
+            <Thead bgColor="red.600">
               <Tr>
-                <Th textColor="white">Name</Th>
-                <Th textColor="white">Address</Th>
-                <Th textColor="white">Action</Th>
+                <Th textColor="black">Name</Th>
+                <Th textColor="black">Address</Th>
+                <Th textColor="black">Action</Th>
               </Tr>
             </Thead>
             <Tbody>
@@ -210,16 +210,16 @@ export default function Home() {
                         size="sm"
                         fontSize="small"
                         colorScheme="yellow"
-                        mr="2"
+                        mr="10"
                         onClick={() => handlShowUpdateClient(client)}
                       >
                         Update
                       </Button>
                       <Button
-                        size="sm"
+                        size="small"
                         fontSize="small"
-                        colorScheme="red"
-                        mr="2"
+                        colorScheme="purple"
+                        mr="10"
                         onClick={() => handleDeleteClient(client._id)}
                       >
                         Delete

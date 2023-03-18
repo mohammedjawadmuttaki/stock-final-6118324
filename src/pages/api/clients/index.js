@@ -18,10 +18,10 @@ export default async function handler(req, res) {
 
     case "POST":
       try {
-        const { name, email } = req.body;
+        const { name, address } = req.body;
 
-        if (!name && !email) throw "invalid data";
-        const client = await Client.create({ name, email });
+        if (!name && !address) throw "invalid data";
+        const client = await Client.create({ name, address });
 
         res.status(201).json({success:true, data:client});
       } catch (error) {

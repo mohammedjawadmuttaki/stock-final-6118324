@@ -8,14 +8,14 @@ const Header = () => {
   return (
     <Flex
       as="nav"
-      align="center"
+      align="left"
       justify="space-between"
       wrap="wrap"
-      padding={6}
-      bg="teal.500"
-      color="white"
+      padding={16}
+      bg="yellow.400"
+      color="black"
     >
-      <Flex align="center" mr={5}>
+      <Flex align="left" mr={15}>
         <Heading as="h1" size="lg" letterSpacing={"tighter"}>
           SUPPLIERS MANAGEMENT
         </Heading>
